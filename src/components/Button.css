@@ -1,0 +1,33 @@
+button{
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border-radius: 100%;
+    border: none;
+    box-shadow: -2px -2px 7px -3px black;
+}
+
+.increase-btn{
+    background-color: rgb(102, 212, 102);
+}
+.increase-btn:hover{
+    background-color: rgb(102, 212, 102, 0.8); 
+}
+.increase-btn:active{
+    transform: scale(0.97);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  
+}
+
+.restart-btn{
+    background-color: rgb(205, 57, 57);
+}
+.restart-btn:hover{
+    background-color: rgb(205, 57, 57, 0.8);
+}
