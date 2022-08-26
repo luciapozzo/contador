@@ -5,6 +5,8 @@
   --third-color: #ead6cb;
   --forth-color: #03c9e6;
   --fifth-color: #034a8a;
+  --white-color: #ffffff;
+  --black-color: #1c1c1c; 
   /*agregar tipos de fuentes*/
 }
 
@@ -21,6 +23,22 @@ html{
 }
 
 body{
-  background-color: #ffffff;
+  background-color: var(--white-color);
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.counter-container{
+  background-color: var(--black-color);
+  min-width: 300px;
+  max-width: fit-content;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5%;
+  box-shadow: 5px 5px 20px grey;
 }
