@@ -1,38 +1,52 @@
 .button-container{
-    padding: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-
+  width: 100%;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 20px;
 }
-
-button{
-    width: 100px;
-    height: 100px;
-    color: var(--white-color);
-    font-weight: bold;
-    font-size: 3rem;
-    text-shadow: 2px 2px 3px var(--black-color);
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    border-radius: 100%;
-    border: none;
-    box-shadow: -2px -2px 7px -3px var(--white-color);
-}
-button:active{
-    transform: scale(0.97);
-    box-shadow: 2px 2px 22px rgba(237, 231, 231, 0.791);
-  
-}
-.increase-btn{
-    background-color: rgb(102, 212, 102);
-}
-.increase-btn:hover{
-    background-color: rgb(102, 212, 102, 0.8); 
-}
-.decrease-btn{
-    background-color: rgb(205, 57, 57);
-}
-.decrease-btn:hover{
-    background-color: rgb(205, 57, 57, 0.8);
-}
+    button{
+      width: 100px;
+      height: 100px;
+      color: var(--black-color);
+      font-family: var(--main-font);
+      font-weight: bold;
+      font-size: 5rem;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      border-radius: 100%;
+      border: none;
+      box-shadow: -2px -2px 7px -3px var(--white-color);
+    }
+    
+    button:active{
+      transform: scale(0.97);
+      box-shadow: 2px 2px 22px var(--grey-alpha-color);
+    }
+        .increase-btn{
+          background-color: rgb(171, 203, 66);
+        }
+            .increase-btn:hover{
+              background-color: rgb(171, 203, 66, 0.8); 
+            }
+        .decrease-btn{
+          background-color: rgb(254, 175, 23);
+        }
+            .decrease-btn:hover{
+              background-color: rgb(254, 175, 23, 0.8);
+            }
+            
+        .reset-btn{
+          background-color: var(--black-color);
+          width: 150px;
+          height: 50px;
+          color: var(--white-color);
+          font-size: 1.5rem;
+          border-radius: 25%;
+          border-radius: 8px;
+          box-shadow: inset 0 0 8px 2px var(--grey-alpha-color);
+        }
+            .reset-btn:nth-child(1){
+              grid-column: span 2;
+            }
